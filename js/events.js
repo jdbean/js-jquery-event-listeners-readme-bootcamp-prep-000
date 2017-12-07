@@ -8,13 +8,14 @@ function getIt() {
 
 function frameIt() {
   $('img').on('load', function() {
-    $('img').addClass('tasty')
+    $('img').addClass('tasty');
   })
 }
 
 function pressIt() {
-  $('input').on('keydown', function(key) {
-    $('img').addClass('tasty')
+  $('input:first').on('keydown', function(key) {
+    if(key.which == 71);
+    alert("You have pressed the G Key!")
   })
 }
 
