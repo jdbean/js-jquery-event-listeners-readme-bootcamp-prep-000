@@ -13,7 +13,7 @@ function frameIt() {
 }
 
 function pressIt() {
-  $('img').on('load', function() {
+  $(document).on('keydown', function() {
     $('img').addClass('tasty')
   })
 }
